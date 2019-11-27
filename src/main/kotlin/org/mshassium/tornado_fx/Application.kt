@@ -6,7 +6,7 @@ import org.mshassium.tornado_fx.view.CalculatorView
 import org.mshassium.tornado_fx.view.CalculatorViewFxml
 import tornadofx.App
 
-class Application : App(CalculatorView::class, FXCalculatorStylesheet::class) {
+class Application : App(CalculatorViewFxml::class, FXCalculatorStylesheet::class) {
 
     override fun start(stage: Stage) {
         stage.isResizable = false
