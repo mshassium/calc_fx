@@ -1,13 +1,10 @@
 package org.mshassium.tornado_fx
 
 import javafx.stage.Stage
-import org.mshassium.tornado_fx.styles.FXCalculatorStylesheet
 import org.mshassium.tornado_fx.view.CalculatorView
-import org.mshassium.tornado_fx.view.CalculatorViewFxml
 import tornadofx.App
 
-class Application : App(CalculatorView::class, FXCalculatorStylesheet::class) {
-
+class Application : App(CalculatorView::class) {
     override fun start(stage: Stage) {
         stage.isResizable = false
         stage.width = 233.00
